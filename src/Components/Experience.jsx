@@ -6,6 +6,8 @@ import js from '../Assest/icon/js.png'
 import reactImage from '../Assest/icon/science.png'
 import javaImage from '../Assest/icon/java.png'
 import css from '../Assest/icon/css.png'
+import node from '../Assest/icon/nodejs.png'
+import mongo from '../Assest/icon/mongo.png'
 
 export default function Experience() {
     const skills = [
@@ -49,6 +51,18 @@ export default function Experience() {
             id:7,
             src:github,
             title:'GitHub',
+            style:'shadow-white'
+        },
+        {
+            id:8,
+            src:node,
+            title:'Node JS',
+            style:'shadow-green-500'
+        },
+        {
+            id:9,
+            src:mongo,
+            title:'Mongo DB',
             style:'shadow-white'
         },
 

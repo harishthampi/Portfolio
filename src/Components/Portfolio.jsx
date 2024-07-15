@@ -1,23 +1,30 @@
 import React from 'react'
-import kamban from '../Assest/download.png'
+import disney from '../Assest/project/disney+.png'
+import netflix from '../Assest/project/netflix.jpg'
+import bms from '../Assest/project/bms.jpg'
 
 export default function Portfolio() {
     const portfolio = [
         {
             id:1,
-            src:kamban
+            src:disney,
+            title:"Disney+",
+            technologies:"JavaScript,React, Styled Components",
+            code:'https://github.com/harishthampi/disneyplus-clone',
+
         },
         {
             id:2,
-            src:kamban
+            src:netflix,
+            title:"Netflix",
+            technologies:"JavaScript,React",
+            code:'https://github.com/harishthampi/Netflix-clone',
         },
         {
             id:3,
-            src:kamban
-        },
-        {
-            id:4,
-            src:kamban
+            src:bms,
+            title:"Book My Show",
+            technologies:"React,Tailwind CSS,Node JS,MongoDB",
         },
 
     ]
@@ -35,15 +42,17 @@ export default function Portfolio() {
             <div  className='grid sm:grid-cols-2 md:grid-cols-3 gap-8
                     px-12 sm:px-0'>
                 {
-                    portfolio.map(({id,src}) => (
+                    portfolio.map(({id,src,title,technologies,demo,code}) => (
 
-                            <div key={id} className='shadow-sm shadow-gray-600 rounded-lg'>
-                            <img src={src} alt='' className='rounded-md hover:scale-105 duration-300'/>
+                            <div key={id} className='shadow-sm shadow-gray-600 rounded-lg flex flex-col items-center'>
+                            <img src={src} alt='' className='rounded-md hover:scale-105 duration-300 w-full h-full object-cover '/>
+                            <h3 className="text-lg font-bold mb-1 items-center border-b-2 pt-1">{title}</h3>
+                            <p className="text-sm py-1">{technologies}</p>
                                 <div className='flex items-center justify-center'>
-                                    <button className='w-1/2 px-6 py-3 m-4 duration-200
-                                    hover:scale-105'>Demo</button>
-                                    <button className='w-1/2 px-6 py-3 m-4 duration-200
-                                    hover:scale-105'>Code</button>
+                                <a href='https://portfolio-harishb.netlify.app/' target="_blank" rel="noreferrer"><button className='w-1/2 px-6 py-3 m-4 duration-200
+                                    hover:scale-105'>Demo</button></a>
+                                 < a href={code} target="_blank" rel="noreferrer"><button className='w-1/2 px-6 m-4 duration-200
+                                    hover:scale-105'>Code</button></a>
                                 </div>
                             </div>
                     ))
