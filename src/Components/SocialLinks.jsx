@@ -11,7 +11,7 @@ export default function SocialLinks() {
                 LinkedIn <FaLinkedin size={30}/>
                 </>
             ),
-            href:'www.linkedin.com/in/harish-b-7722a9315',
+            href:'https://www.linkedin.com/in/harishbhupeshthampi/',
             style:'rounded-tr-md'
         },
         {
