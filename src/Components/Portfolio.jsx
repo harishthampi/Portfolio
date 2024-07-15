@@ -11,6 +11,7 @@ export default function Portfolio() {
             title:"Disney+",
             technologies:"JavaScript,React, Styled Components",
             code:'https://github.com/harishthampi/disneyplus-clone',
+            demo:''
 
         },
         {
@@ -19,6 +20,7 @@ export default function Portfolio() {
             title:"Netflix",
             technologies:"JavaScript,React",
             code:'https://github.com/harishthampi/Netflix-clone',
+            demo:'https://netflixclone-v1.netlify.app/'
         },
         {
             id:3,
@@ -49,7 +51,7 @@ export default function Portfolio() {
                             <h3 className="text-lg font-bold mb-1 items-center border-b-2 pt-1">{title}</h3>
                             <p className="text-sm py-1">{technologies}</p>
                                 <div className='flex items-center justify-center'>
-                                <a href='https://portfolio-harishb.netlify.app/' target="_blank" rel="noreferrer"><button className='w-1/2 px-6 py-3 m-4 duration-200
+                                <a href={demo} target="_blank" rel="noreferrer"><button className='w-1/2 px-6 py-3 m-4 duration-200
                                     hover:scale-105'>Demo</button></a>
                                  < a href={code} target="_blank" rel="noreferrer"><button className='w-1/2 px-6 m-4 duration-200
                                     hover:scale-105'>Code</button></a>
