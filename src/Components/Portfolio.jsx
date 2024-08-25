@@ -2,6 +2,7 @@ import React from 'react'
 import disney from '../Assest/project/disney+.png'
 import netflix from '../Assest/project/netflix.jpg'
 import bms from '../Assest/project/bms.jpg'
+import foodDelivery from '../Assest/project/Food-Delivery.jpg'
 
 export default function Portfolio() {
     const portfolio = [
@@ -11,7 +12,7 @@ export default function Portfolio() {
             title:"Disney+",
             technologies:"JavaScript,React, Styled Components",
             code:'https://github.com/harishthampi/disneyplus-clone',
-            demo:''
+            demo:'https://disneyplusclone-v1.netlify.app/'
 
         },
         {
@@ -20,7 +21,7 @@ export default function Portfolio() {
             title:"Netflix",
             technologies:"JavaScript,React",
             code:'https://github.com/harishthampi/Netflix-clone',
-            demo:'https://netflixclone-v1.netlify.app/'
+            demo:'https://netflexclone-v1.netlify.app/'
         },
         {
             id:3,
@@ -28,6 +29,14 @@ export default function Portfolio() {
             title:"Book My Show",
             technologies:"React,Tailwind CSS,Node JS,MongoDB",
         },
+        {
+            id:4,
+            src:foodDelivery,
+            title:"Food Delivery App",
+            technologies:"MERN Stack, TailwindCSS, Auth0, Stripe, Cloudinary",
+            code:'https://github.com/harishthampi/FoodDelivery-Frontend',
+            demo:'https://fooddelivery-frontend-0hmd.onrender.com/'
+        }
 
     ]
   return (
@@ -48,8 +57,8 @@ export default function Portfolio() {
 
                             <div key={id} className='shadow-sm shadow-gray-600 rounded-lg flex flex-col items-center'>
                             <img src={src} alt='' className='rounded-md hover:scale-105 duration-300 w-full h-full object-cover '/>
-                            <h3 className="text-lg font-bold mb-1 items-center border-b-2 pt-1">{title}</h3>
-                            <p className="text-sm py-1">{technologies}</p>
+                            <h3 className="text-lg font-bold mb-1 items-center border-b-2 pt-1 ml-1">{title}</h3>
+                            <p className="text-sm py-1 ml-5">{technologies}</p>
                                 <div className='flex items-center justify-center'>
                                 <a href={demo} target="_blank" rel="noreferrer"><button className='w-1/2 px-6 py-3 m-4 duration-200
                                     hover:scale-105'>Demo</button></a>
