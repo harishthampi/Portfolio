@@ -8,7 +8,7 @@ export default function Home() {
     <div
       name="home"
       className="min-h-screen w-full bg-gradient-to-b from-black
-     via-black to-gray-800" 
+     via-black to-gray-800 mt-10" 
     >
       <div
         className="max-w-screen-lg mx-auto flex flex-col
