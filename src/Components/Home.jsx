@@ -8,14 +8,14 @@ export default function Home() {
     <div
       name="home"
       className="min-h-screen w-full bg-gradient-to-b from-black
-     via-black to-gray-800 mt-10" 
+     via-black to-gray-800" 
     >
       <div
         className="max-w-screen-lg mx-auto flex flex-col
       items-center justify-center min-h-screen  px-4 md:flex-row"
       >
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+          <h2 className="text-4xl sm:text-7xl font-bold text-white mt-10">
             I'm a Front-end Developer
           </h2>
           <p className="text-gray-500 mt-4">
