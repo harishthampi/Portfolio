@@ -4,16 +4,16 @@ export default function About() {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b
-    from-gray-800 to-black text-white"
+      className="min-h-screen  w-full bg-gradient-to-b
+    from-gray-800 to-black text-white pt-20"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center  w-full h-full">
         <div className="pb-8 ">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-lg sm:text-xl mt-10 sm:mt-20">
           Hello! I’m Harish, a dedicated front-end developer with a
           strong background in team leadership. For two years, I led a dynamic
           team at CareStack, where I honed my skills in project management and

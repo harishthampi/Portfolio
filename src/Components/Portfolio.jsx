@@ -42,7 +42,7 @@ export default function Portfolio() {
   return (
     <div name="portfolio" className='bg-gradient-to-b
     from-black to-gray-800 w-full text-white
-    md:h-screen'>
+    pt-20'>
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col 
         justify-center w-full h-full'>
             <div className='pb-8'>
@@ -56,7 +56,7 @@ export default function Portfolio() {
                     portfolio.map(({id,src,title,technologies,demo,code}) => (
 
                             <div key={id} className='shadow-sm shadow-gray-600 rounded-lg flex flex-col items-center'>
-                            <img src={src} alt='' className='rounded-md hover:scale-105 duration-300 w-full h-full object-cover '/>
+                            <img src={src} alt='' className='rounded-md hover:scale-105 duration-300 w-full h-48 object-cover '/>
                             <h3 className="text-lg font-bold mb-1 items-center border-b-2 pt-1 ml-1">{title}</h3>
                             <p className="text-sm py-1 ml-5">{technologies}</p>
                                 <div className='flex items-center justify-center'>
