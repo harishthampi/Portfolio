@@ -16,7 +16,7 @@ export default function Home() {
       >
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white mt-10">
-            I'm a Front-end Developer
+            I'm a Fullstack Developer
           </h2>
           <p className="text-gray-500 mt-4">
             As a recent entrant in the software field, I'm eager to kick-start
