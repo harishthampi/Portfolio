@@ -39,7 +39,7 @@ export default function SocialLinks() {
                 Resume <BsFillPersonLinesFill size={30}/>
                 </>
             ),
-            href:'./Harish_SoftwareEngineer.docx',
+            href:'./SoftwareDeveloper_Harish.pdf',
             style:'rounded-tr-md',
             download:true,
         },
