@@ -3,6 +3,7 @@ import disney from '../Assest/project/disney+.png'
 import netflix from '../Assest/project/netflix.jpg'
 import bms from '../Assest/project/bms.jpg'
 import foodDelivery from '../Assest/project/Food-Delivery.jpg'
+import jobPortal from '../Assest/project/jobPortal.jpeg'
 
 export default function Portfolio() {
     const portfolio = [
@@ -33,10 +34,18 @@ export default function Portfolio() {
             id:4,
             src:foodDelivery,
             title:"Food Delivery App",
-            technologies:"MERN Stack, TailwindCSS, Auth0, Stripe, Cloudinary",
+            technologies:"MERN Stack, TailwindCSS, Auth0, Stripe, Cloudinary,Shadcn UI",
             code:'https://github.com/harishthampi/FoodDelivery-Frontend',
             demo:'https://fooddelivery-frontend-0hmd.onrender.com/'
-        }
+        },
+        {
+            id:5,
+            src:jobPortal,
+            title:"Hirrd",
+            technologies:"React, Tailwind CSS, Node JS, Clerk, Supabase,Shadcn UI",
+            code:'https://github.com/harishthampi/hirrd',
+            demo:'https://hirrd-sigma.vercel.app/'
+        },
 
     ]
   return (
